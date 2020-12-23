@@ -18,7 +18,7 @@ body {
     justify-content: center
 }
 
-.instagram-warapper {
+.instagram-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -126,4 +126,26 @@ body {
 
 .app-download:nth-child(2) {
     background-image: url(img/googleplay-button.png)
+}
+
+/* reponsividade, media queries*/
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) { 
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none; /*no celular o celular.png vai sumir, priorizando o login*/
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
 }
